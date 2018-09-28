@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HANJAN SWITCH</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="mainsass/css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--JQUERY-->
+    <script src="js/jquery-3.3.1.js"> </script>
+    <script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<h2 contenteditable class="text"> DEVICE LIST </h2>
+		</div>
+	</header>
+<content id="hide">
+	<div class="deviceName">
+		<label for="scandevice">SCAN YOUR DEVICE: <br><br>  <strong class="center"> <i class="material-icons">error</i> CAMERA NOT FOUND </strong></label>
+        <img src="">
+	</div>
+  <br>
+  <br>
+    <div class="deviceName">
+    	<label for="namedevice">NAME YOUR DEVICE:</label><br>
+        <input id="nextDevice" type="text" placeholder="DEVICE NAME" name="namedevice" required>
+    </div>
+    <br> 
+    <div class="buttons">  
+    <button id="add-to-list" class="add-to-list" type="Add"><!-- <a href="devicelist.html"> -->ADD DEVICE TO LIST</button>
+    </div>
+    <br>
+     <br>
+    <div class="buttons"> 
+    <button type="Cancel"><a href="index.html">CANCEL</a></button>
+    </div>
+    
+
+
+</content>
+
+<section id="Dlisthiden">
+    <div>
+        <ul>
+          <li contenteditable class="center">Living Room Light</li>
+          <li contenteditable class="center">HUMAN</li>
+        </ul>
+    </div>
+   <div>
+    <label class="switch__1">
+    <input type="checkbox">
+    <span class="slider"></span>
+    </label>
+  </div>
+  <div>
+    <label class="switch__2">
+    <input type="checkbox">
+     <span class="slider"></span> 
+    </label>
+  </div>
+  <div>
+    <label class="switch__3">
+    <input type="checkbox">
+    <span class="slider"></span> 
+    </label>
+  </div>
+
+    <!-- <div>
+    <label class="switch__4">
+    <input type="checkbox">
+    <span class="slider"></span> 
+    </label>
+  </div>
+   
+ <div>
+    <label class="switch__5">
+    <input type="checkbox">
+    <span class="slider"></span> 
+    </label>
+  </div> -->
+   
+    
+</section>
+<footer id="FooTer">
+    <div class="footer">
+      <i id="device" class="material-icons"><a href="controldevice.html">device_hub</a></i>
+      <i id="list" class="material-icons"><a href="adddevicetolist.html">playlist_add</a></i>
+    </div>
+</footer>
+
+
+</body>
+</html>

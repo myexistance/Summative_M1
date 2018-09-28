@@ -1,0 +1,19 @@
+li {
+  list-style: none;
+  background: #d1703c;
+  line-height: 50px;
+  margin: 2px 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%
+}
+
+li.show {
+  height: 50px;
+  margin: 2px 0;
+}
+
+.center {
+    text-align: center;
+    border: 3px solid  none;
+}

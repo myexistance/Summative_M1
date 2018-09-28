@@ -1,0 +1,367 @@
+body {
+  width: 100%;
+  height: 80%;
+  background-color: #474747;
+  margin: auto; }
+
+frontpage {
+  position: absolute;
+  background-color: black;
+  color: #FFFFFF;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 5; }
+
+#center {
+  position: absolute;
+  width: 30%;
+  top: 2%;
+  left: 23%;
+  margin-right: 20%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FFFFFF;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+frontpage {
+  -webkit-animation-name: shrink;
+  animation-name: shrink;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s; }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 30%; } }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  20% {
+    border-color: #FFFFFF; } }
+@-webkit-keyframes shrink {
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+@keyframes shrink {
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+a {
+  color: #FFFFFF; }
+
+div.buttons {
+  height: 50px;
+  position: relative; }
+
+div.buttons button {
+  color: #FFFFFF;
+  border: 2px solid #2c3e50;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  height: 45px;
+  width: 250px;
+  margin: 0;
+  background: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  border: 1px solid #FFFFFF;
+  border-style: none none solid none;
+  width: 100%;
+  height: 100px;
+  background-color: #000000; }
+
+.text {
+  color: #FFFFFF;
+  text-align: center; }
+
+div.header {
+  height: 100px;
+  position: relative; }
+
+div.header h2 {
+  margin: 0;
+  background: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+div.userName input {
+  height: 40px;
+  width: 250px;
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  border-style: none none solid none;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+div.passWord input {
+  height: 40px;
+  width: 250px;
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  border-style: none none solid none;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+div.deviceName input {
+  height: 40px;
+  width: 250px;
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  border-style: none none solid none;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+li {
+  list-style: none;
+  background: #d1703c;
+  line-height: 50px;
+  margin: 2px 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%; }
+
+li.show {
+  height: 50px;
+  margin: 2px 0; }
+
+.center {
+  text-align: center;
+  border: 3px solid  none; }
+
+/*a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}*/
+content {
+  width: 100%;
+  height: 80%;
+  background: #474747; }
+
+.text {
+  color: #FFFFFF;
+  text-align: center; }
+
+div.content {
+  height: 100px;
+  position: relative; }
+
+div.content h2 {
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+div.userName {
+  height: 100px;
+  position: relative; }
+
+div.userName label {
+  height: 35px;
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+div.passWord {
+  height: 100px;
+  position: relative; }
+
+div.passWord label {
+  height: 35px;
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+div.deviceName {
+  height: 100px;
+  position: relative; }
+
+div.deviceName label {
+  height: 35px;
+  margin: 0;
+  background: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+lockContainer {
+  border: 1px solid #FFFFFF;
+  border-style: solid none none none;
+  position: absolute;
+  background-color: #000000;
+  color: #FFFFFF;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 3; }
+
+lockContainer > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+.footer {
+  border: 1px solid #FFFFFF;
+  border-style: solid none none none;
+  width: 100%;
+  height: 100px;
+  background-color: #000000; }
+
+div.footer {
+  height: 100px;
+  position: absolute;
+  bottom: 0; }
+
+#device {
+  margin: 0;
+  background: #000000;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+#list {
+  margin: 0;
+  background: #000000;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  margin-left: -50%;
+  transform: translate(-50%, -50%); }
+
+.switch__1 {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 35px;
+  left: 80%;
+  top: 111px; }
+
+.switch__2 {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 35px;
+  left: 80%;
+  top: 164px; }
+
+.switch__3 {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 35px;
+  left: 80%;
+  top: 217px; }
+
+.switch__01 {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 35px;
+  left: 80%;
+  top: 111px; }
+
+.switch__02 {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 35px;
+  left: 80%;
+  top: 164px; }
+
+.switch input {
+  display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #474747;
+  -webkit-transition: .6s;
+  transition: .6s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #FFFFFF;
+  -webkit-transition: .6s;
+  transition: .6s; }
+
+input:checked + .slider {
+  background-color: #13dd61; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #13dd61; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@mixin inputDimention {
+    height: 40px;
+    width: 250px;
+    margin: 0;
+    background: #474747;
+    position: absolute;
+    border-style: none none solid none;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+
+div.userName input {
+	@include inputDimention;
+}
+
+div.passWord input {
+	@include inputDimention;
+}
+
+div.deviceName input {
+	@include inputDimention;
+}
